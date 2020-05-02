@@ -18,4 +18,4 @@ class PastryAdmin(admin.ModelAdmin):
 
 @admin.register(pastry.PastryIngredient)
 class PastryIngredientAdmin(admin.ModelAdmin):
-    list_display = ('id',)
+    list_display = ('pastry', 'ingredient', 'unit')

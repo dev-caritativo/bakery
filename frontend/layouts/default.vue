@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="site">
     <Navbar />
     <nuxt />
   </div>
@@ -28,6 +28,26 @@ html {
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #858796;
+  text-align: left;
+  background-color: #fff;
+  height: 100vh;
+}
+
+#site {
+  height: 100%;
+}
+
+.container-fluid {
+    height: 100%;
+    overflow-y: hidden; /* don't show content that exceeds my height */
+}
 *,
 *:before,
 *:after {

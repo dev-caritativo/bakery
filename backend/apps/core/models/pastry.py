@@ -36,7 +36,8 @@ class PastryIngredient(models.Model):
         Ingredient, on_delete=models.CASCADE)
     pastry = models.ForeignKey(
         Pastry, on_delete=models.CASCADE)
-    gram = models.PositiveIntegerField(validators=[MinValueValidator(1)], default=1)
+    unit = models.PositiveIntegerField(
+        validators=[MinValueValidator(1)], default=1)
 
     def __str__(self):
         return f'{self.pastry}-{self.ingredient}'
